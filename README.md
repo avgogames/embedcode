@@ -6,7 +6,7 @@ Paste this where the tabs should appear:
 
 ```html
 <div data-spiderclimbs-tabs></div>
-<script src="https://cdn.jsdelivr.net/gh/avgogames/spiderclimbs@main/embed/tabs.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/tabs.js" defer></script>
 ```
 
 The script and all the pages and PDFs load from this repo through the free jsDelivr CDN, so you don't have to upload anything. It works in any site builder that lets you add custom HTML.
@@ -25,7 +25,7 @@ For example, a worksheets-only box:
 
 ```html
 <div data-spiderclimbs-tabs data-tabs="worksheets"></div>
-<script src="https://cdn.jsdelivr.net/gh/avgogames/spiderclimbs@main/embed/tabs.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/tabs.js" defer></script>
 ```
 
 You can put several boxes on one page; load the script once.
@@ -45,7 +45,7 @@ Paste this where the game should appear:
 
 ```html
 <div data-spiderclimbs-typing></div>
-<script src="https://cdn.jsdelivr.net/gh/avgogames/spiderclimbs@main/embed/typing.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/typing.js" defer></script>
 ```
 
 | Attribute | Example | What it does |
@@ -63,7 +63,7 @@ Paste this where the game should appear:
 
 ```html
 <div data-spiderclimbs-flashcards></div>
-<script src="https://cdn.jsdelivr.net/gh/avgogames/spiderclimbs@main/embed/flashcards.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/flashcards.js" defer></script>
 ```
 
 | Attribute | Example | What it does |
@@ -91,7 +91,7 @@ Paste this where the animation should appear:
 
 ```html
 <div data-spiderclimbs-carry></div>
-<script src="https://cdn.jsdelivr.net/gh/avgogames/spiderclimbs@main/embed/carry.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/carry.js" defer></script>
 ```
 
 | Attribute | Example | What it does |
@@ -117,7 +117,7 @@ One script serves all three. Put any of the divs on a page and load the script o
 <div data-spiderclimbs-subtract></div>
 <div data-spiderclimbs-multiply></div>
 <div data-spiderclimbs-divide></div>
-<script src="https://cdn.jsdelivr.net/gh/avgogames/spiderclimbs@main/embed/arithmetic.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/arithmetic.js" defer></script>
 ```
 
 | Attribute | Example | What it does |
@@ -139,7 +139,7 @@ Paste this where the game should appear:
 
 ```html
 <div data-spiderclimbs-tracing></div>
-<script src="https://cdn.jsdelivr.net/gh/avgogames/spiderclimbs@main/embed/tracing.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/tracing.js" defer></script>
 ```
 
 | Attribute | Example | What it does |
@@ -164,7 +164,7 @@ Paste this where the game should appear:
 
 ```html
 <div data-spiderclimbs-pixelart></div>
-<script src="https://cdn.jsdelivr.net/gh/avgogames/spiderclimbs@main/embed/pixelart.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/pixelart.js" defer></script>
 ```
 
 | Attribute | Example | What it does |
@@ -173,7 +173,7 @@ Paste this where the game should appear:
 | `data-picture` | `data-picture="12"` | Open one picture straight away |
 | `data-sound` | `data-sound="off"` | Start with sound off |
 
-The pictures were made from Noto Color Emoji (Apache 2.0 license), plus our own drawings for the planets and the anime characters. To add or change pictures, edit `pixelart-source/items.json` and run `pixelart-source/build.sh`. `pixelart-demo.html` in this folder is a demo page.
+The pictures were made from Noto Color Emoji (Apache 2.0 license), plus our own drawings for the planets and the anime characters. `pixelart-demo.html` in this folder is a demo page.
 
 # Embed code: Spider Climb Racing
 
@@ -205,7 +205,7 @@ Paste this where the game should appear:
 
 ```html
 <div data-spiderclimbs-racing></div>
-<script src="https://cdn.jsdelivr.net/gh/avgogames/spiderclimbs@main/embed/racing.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/racing.js" defer></script>
 ```
 
 | Attribute | Example | What it does |
@@ -217,14 +217,31 @@ Paste this where the game should appear:
 
 The styles all start with `scr`, so they won't clash with your site's CSS. `racing-demo.html` in this folder is a demo page.
 
-# Plain and obfuscated scripts
+# Embed code: games box (Typing, Flash Cards, Pixel Art, Racing)
 
-The scripts the embed code loads (`embed/*.js`) are obfuscated, so they are hard to read or copy. Each one keeps its comment at the top with the embed code. The plain, readable copies are in `embed/src/`.
+One embed code that shows four games in tabs: Spider Climb Typing, Math Flash Cards, Pixel Art by Number and Spider Climb Racing. A game's script loads only when its tab is first opened, so the page stays quick. Switching away from Racing pauses the race.
 
-To change a script:
+Paste this where the box should appear:
 
-1. Edit the plain copy in `embed/src/`.
-2. Rebuild the obfuscated files. In `embed/obfuscate/`, run `npm install` once, then `npm run build`. To rebuild a single file, run `node obfuscate.js racing.js`.
-3. Commit both the `src/` copy and the rebuilt file.
+```html
+<div data-spiderclimbs-games></div>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/games.js" defer></script>
+```
 
-`pixelart-source/build.sh` writes `src/pixelart.js` and then obfuscates it.
+| Attribute | Example | What it does |
+| --- | --- | --- |
+| `data-tab` | `data-tab="racing"` | Tab to open first: `typing`, `flashcards`, `pixelart` or `racing` |
+| `data-tabs` | `data-tabs="pixelart,racing"` | Which tabs to show, in order |
+| `data-sound` | `data-sound="off"` | Start every game with sound off |
+| `data-base` | `data-base="https://example.com/embed/"` | Load the game scripts from your own server |
+
+The styles all start with `sgt`. `games-demo.html` in this folder is a demo page.
+
+# About this repo
+
+This repo holds the embed scripts (obfuscated) and the files they use:
+
+- `pages/` and `set-2/`: the coloring pages (PNG, SVG, PDF).
+- `math exercise/grade-N/`: the worksheet and answer-key PDFs.
+
+The plain, readable scripts and the tools that build them are kept in the avgogames/spiderclimbs repo, under `embed/src/`, `embed/obfuscate/` and `embed/pixelart-source/`. After changing a script there, build the obfuscated file and copy it here.
