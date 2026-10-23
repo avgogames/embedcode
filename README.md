@@ -1,3 +1,94 @@
+# Spiderclimbs embed codes
+
+Copy a block below and paste it into your web page where the game should appear. Each script loads from this repo through jsDelivr. The options for each script are in its own section further down.
+
+## games.js
+
+Games box: Typing, Flash Cards, Pixel Art and Racing in tabs:
+
+```html
+<div data-spiderclimbs-games></div>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/games.js" defer></script>
+```
+
+## tabs.js
+
+Printables tabs: coloring pages and math worksheets:
+
+```html
+<div data-spiderclimbs-tabs></div>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/tabs.js" defer></script>
+```
+
+## typing.js
+
+Spider Climb Typing game:
+
+```html
+<div data-spiderclimbs-typing></div>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/typing.js" defer></script>
+```
+
+## flashcards.js
+
+Math Flash Cards (grades 1 to 6):
+
+```html
+<div data-spiderclimbs-flashcards></div>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/flashcards.js" defer></script>
+```
+
+## carry.js
+
+Adding with Carrying animation:
+
+```html
+<div data-spiderclimbs-carry></div>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/carry.js" defer></script>
+```
+
+## arithmetic.js
+
+Subtraction, Multiplication and Division animations (use one, two or all three boxes):
+
+```html
+<div data-spiderclimbs-subtract></div>
+<div data-spiderclimbs-multiply></div>
+<div data-spiderclimbs-divide></div>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/arithmetic.js" defer></script>
+```
+
+## tracing.js
+
+Trace & Learn (letters and numbers):
+
+```html
+<div data-spiderclimbs-tracing></div>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/tracing.js" defer></script>
+```
+
+## pixelart.js
+
+Pixel Art by Number:
+
+```html
+<div data-spiderclimbs-pixelart></div>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/pixelart.js" defer></script>
+```
+
+## racing.js
+
+Spider Climb Racing:
+
+```html
+<div data-spiderclimbs-racing></div>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/racing.js" defer></script>
+```
+
+To use several scripts on one page, paste each block once. Pages that use only the games box don't need typing.js, flashcards.js, pixelart.js or racing.js too.
+
+---
+
 # Embed code: printables tabs
 
 A tabbed box for your website with three tabs: **Science Coloring**, **Math Coloring** and **Math Worksheets** (Grade 1 to 6, each with Worksheets PDF and Answer key buttons).
