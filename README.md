@@ -11,6 +11,15 @@ Games box: Typing, Flash Cards, Pixel Art and Racing in tabs:
 <script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/games.js" defer></script>
 ```
 
+## learn.js
+
+Learn box: Adding, Subtracting, Multiplying, Dividing and Tracing in tabs:
+
+```html
+<div data-spiderclimbs-learn></div>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/learn.js" defer></script>
+```
+
 ## tabs.js
 
 Printables tabs: coloring pages and math worksheets:
@@ -85,7 +94,7 @@ Spider Climb Racing:
 <script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/racing.js" defer></script>
 ```
 
-To use several scripts on one page, paste each block once. Pages that use only the games box don't need typing.js, flashcards.js, pixelart.js or racing.js too.
+To use several scripts on one page, paste each block once. Pages that use only the games box don't need typing.js, flashcards.js, pixelart.js or racing.js too, and pages that use only the learn box don't need carry.js, arithmetic.js or tracing.js.
 
 ---
 
@@ -327,6 +336,27 @@ Paste this where the box should appear:
 | `data-base` | `data-base="https://example.com/embed/"` | Load the game scripts from your own server |
 
 The styles all start with `sgt`. `games-demo.html` in this folder is a demo page.
+
+# Embed code: learn box (Adding, Subtracting, Multiplying, Dividing, Tracing)
+
+One embed code that shows the math animations and the tracing game in tabs: Adding with Carrying, Subtraction, Long Multiplication, Long Division and Trace & Learn. Each script loads only when one of its tabs is first opened.
+
+Paste this where the box should appear:
+
+```html
+<div data-spiderclimbs-learn></div>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/learn.js" defer></script>
+```
+
+| Attribute | Example | What it does |
+| --- | --- | --- |
+| `data-tab` | `data-tab="tracing"` | Tab to open first: `add`, `subtract`, `multiply`, `divide` or `tracing` |
+| `data-tabs` | `data-tabs="add,subtract"` | Which tabs to show, in order |
+| `data-sound` | `data-sound="off"` | Start with sound off |
+| `data-speed` | `data-speed="slow"` | Animation speed for the math tabs |
+| `data-base` | `data-base="https://example.com/embed/"` | Load the scripts from your own server |
+
+The styles all start with `slt`. `learn-demo.html` is a demo page.
 
 # About this repo
 
