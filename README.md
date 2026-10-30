@@ -94,6 +94,15 @@ Spider Climb Racing:
 <script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/racing.js" defer></script>
 ```
 
+## origami.js
+
+Origami Animals (animated folding guides):
+
+```html
+<div data-spiderclimbs-origami></div>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/origami.js" defer></script>
+```
+
 To use several scripts on one page, paste each block once. Pages that use only the games box don't need typing.js, flashcards.js, pixelart.js or racing.js too, and pages that use only the learn box don't need carry.js, arithmetic.js or tracing.js.
 
 ---
@@ -316,6 +325,25 @@ Paste this where the game should appear:
 | `data-sound` | `data-sound="off"` | Start with sound off |
 
 The styles all start with `scr`, so they won't clash with your site's CSS. `racing-demo.html` in this folder is a demo page.
+
+# Embed code: Origami Animals
+
+Animated step-by-step folding guides for 7 paper animals: Puppy, Kitty, Fox, Bunny, Penguin, Whale and Swan. Kids pick an animal, then watch each fold happen on screen. A dashed line shows where to fold (orange for folding toward you, purple for folding behind), an arrow shows which way the paper moves, and then the paper folds over. Each step has a short instruction. Kids can step back and forth, replay a fold, or press Play all. All you need is one square piece of paper.
+
+Paste this where the guide should appear:
+
+```html
+<div data-spiderclimbs-origami></div>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/origami.js" defer></script>
+```
+
+| Attribute | Example | What it does |
+| --- | --- | --- |
+| `data-animal` | `data-animal="fox"` | Open straight on one animal: `dog`, `cat`, `fox`, `bunny`, `penguin`, `whale` or `swan` |
+| `data-animals` | `data-animals="dog,cat,fox"` | Which animals to offer, in order |
+| `data-speed` | `data-speed="slow"` | Fold speed: `slow`, `normal` (default) or `fast` |
+
+`origami-demo.html` in this folder is a demo page.
 
 # Embed code: games box (Typing, Flash Cards, Pixel Art, Racing)
 
