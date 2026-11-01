@@ -262,7 +262,7 @@ Paste this where the game should appear:
 
 # Embed code: Pixel Art by Number
 
-A color-by-number game with 117 pixel pictures in seven topics: Animals (1–17), Plants (18–34), Planets and space (35–51), Cars (52–68), Christmas (69–84), Halloween (85–100) and Anime (101–117). The Anime pictures are 12 original chibi characters drawn for this game (not characters from any show) plus onigiri, ramen, dango, a carp streamer and a torii gate.
+A color-by-number game with 136 pixel pictures in seven topics: Animals (1–17), Plants (18–34), Planets and space (35–51), Cars (52–68), Christmas (69–84), Halloween (85–100) and Anime (101–136). The Anime topic is a full 6 × 6 page. It has 18 original chibi characters drawn for this game (not characters from any show), 13 cute kawaii friends (kitty, bunny, panda, shiba pup, frog, strawberry, boba tea, mochi, rainbow cloud, star, cupcake, lucky cat and unicorn), plus onigiri, ramen, dango, a carp streamer and a torii gate.
 
 - **Gallery:** pictures show 36 at a time, in a 6 × 6 grid. Each one has its picture number, a progress bar, and a grey preview that fills with color as it's painted. Topic buttons filter the list, and page buttons move between pages.
 - **Coloring:** every square on the 24 × 24 grid has a number, including the patterned background. Picking a color from the numbered dots at the bottom darkens every square with that number. Tap a square to color it, or press and hold and drag to color lots of squares. Only the right number takes the color.
