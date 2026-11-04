@@ -38,6 +38,15 @@ Spider Climb Typing game:
 <script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/typing.js" defer></script>
 ```
 
+## spacetyping.js
+
+Space Typing game: type the word on each falling asteroid to blast it with the spacecraft's laser. 10 levels, asks for the player's name, and saves every score in a cookie (`spst-scores`):
+
+```html
+<div data-spiderclimbs-spacetyping></div>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/spacetyping.js" defer></script>
+```
+
 ## flashcards.js
 
 Math Flash Cards (grades 1 to 6):
