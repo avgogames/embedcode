@@ -40,7 +40,7 @@ Spider Climb Typing game:
 
 ## spacetyping.js
 
-Space Typing game: type the word on each falling asteroid to blast it with the spacecraft's laser. alien ships that shoot back (type their letter to destroy them and gain health), shield asteroids, red zig-zag raiders from level 11, 10 health, 20 levels, asks for the player's name, and saves every score in a cookie (`spst-scores`):
+Space Typing game: type the word on each falling asteroid to blast it with the spacecraft's laser. alien ships that shoot back (type their letter to destroy them and gain health), shield asteroids, red zig-zag raiders from level 11, 10 health, 20 levels, original background music (🎵 to switch off), asks for the player's name, and saves every score in a cookie (`spst-scores`):
 
 ```html
 <div data-spiderclimbs-spacetyping></div>
