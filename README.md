@@ -133,6 +133,15 @@ The script and all the pages and PDFs load from this repo through the free jsDel
 
 Every embed has a ⛶ button in its bottom-right corner. On desktop and Android it switches the game to real full screen; on iPhone and iPad (where Safari only allows full screen for video) it stretches the game over the whole page. Tap ✕ or press Esc to go back. Inside the games box and learn box, the box's own button makes the whole box full screen. To hide the button, add `data-fullscreen="off"` to the div.
 
+## scores.js
+
+Online score board. Space Typing players can join with a safe nickname and their scores show here:
+
+```html
+<div data-spiderclimbs-scoreboard data-game="spacetyping"></div>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/scores.js" defer></script>
+```
+
 ## Options
 
 Add these to the `<div>`:
