@@ -142,6 +142,15 @@ Online score board. Space Typing players can join with a safe nickname and their
 <script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/scores.js" defer></script>
 ```
 
+## voxel.js
+
+3D Pixel Art: color 20 3D block models (animals, vehicles, houses, tools) by number, turn and zoom them, and win a surprise gift for each finished model. Gifts are saved online when the player joins with a nickname:
+
+```html
+<div data-spiderclimbs-voxel></div>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/voxel.js" defer></script>
+```
+
 ## Options
 
 Add these to the `<div>`:
