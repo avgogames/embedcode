@@ -434,3 +434,12 @@ The plain, readable scripts and the tools that build them are kept in the avgoga
 <div data-spiderclimbs-sudoku></div>
 <script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/sudoku.js"></script>
 ```
+
+## 3D Yoga Poses
+
+16 kids' yoga poses on a 3D figure you can turn and zoom, with a hold timer and breathing prompts. Demo: yoga-demo.html
+
+```html
+<div data-spiderclimbs-yoga></div>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/yoga.js"></script>
+```
