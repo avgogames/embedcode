@@ -443,3 +443,12 @@ The plain, readable scripts and the tools that build them are kept in the avgoga
 <div data-spiderclimbs-yoga></div>
 <script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/yoga.js"></script>
 ```
+
+## Balloon Breathing
+
+3D calm breathing game: in for 4, out for 4, and each calm breath floats a balloon into the sky. Demo: breathe-demo.html
+
+```html
+<div data-spiderclimbs-breathe></div>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/breathe.js"></script>
+```
