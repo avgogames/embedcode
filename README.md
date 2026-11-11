@@ -425,3 +425,12 @@ This repo holds the embed scripts (obfuscated) and the files they use:
 - `math exercise/grade-N/`: the worksheet and answer-key PDFs.
 
 The plain, readable scripts and the tools that build them are kept in the avgogames/spiderclimbs repo, under `embed/src/`, `embed/obfuscate/` and `embed/pixelart-source/`. After changing a script there, build the obfuscated file and copy it here.
+
+## 3D Sudoku
+
+3D sudoku board (three.js) with username + PIN sign-in, save and continue, restart, timer and best times. Run `sudoku-setup.sql` once in the Supabase SQL Editor.
+
+```html
+<div data-spiderclimbs-sudoku></div>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/sudoku.js"></script>
+```
