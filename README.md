@@ -103,6 +103,15 @@ Spider Climb Racing:
 <script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/racing.js" defer></script>
 ```
 
+## spidercode.js
+
+Coding puzzle game: program the spider with picture blocks (40 levels).
+
+```html
+<div data-spiderclimbs-code></div>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/spidercode.js" defer></script>
+```
+
 ## origami.js
 
 Origami Animals (animated folding guides):
@@ -112,7 +121,7 @@ Origami Animals (animated folding guides):
 <script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/origami.js" defer></script>
 ```
 
-To use several scripts on one page, paste each block once. Pages that use only the games box don't need typing.js, flashcards.js, pixelart.js or racing.js too, and pages that use only the learn box don't need carry.js, arithmetic.js or tracing.js.
+To use several scripts on one page, paste each block once. Pages that use only the games box don't need typing.js, flashcards.js, pixelart.js, racing.js or spidercode.js too, and pages that use only the learn box don't need carry.js, arithmetic.js or tracing.js.
 
 ---
 
@@ -376,9 +385,9 @@ Paste this where the guide should appear:
 
 `origami-demo.html` in this folder is a demo page.
 
-# Embed code: games box (Typing, Flash Cards, Pixel Art, Racing)
+# Embed code: games box (Typing, Flash Cards, Pixel Art, Racing, Spider Code)
 
-One embed code that shows four games in tabs: Spider Climb Typing, Math Flash Cards, Pixel Art by Number and Spider Climb Racing. A game's script loads only when its tab is first opened, so the page stays quick. Switching away from Racing pauses the race.
+One embed code that shows five games in tabs: Spider Climb Typing, Math Flash Cards, Pixel Art by Number, Spider Climb Racing and Spider Code. A game's script loads only when its tab is first opened, so the page stays quick. Switching away from Racing pauses the race.
 
 Paste this where the box should appear:
 
@@ -389,7 +398,7 @@ Paste this where the box should appear:
 
 | Attribute | Example | What it does |
 | --- | --- | --- |
-| `data-tab` | `data-tab="racing"` | Tab to open first: `typing`, `flashcards`, `pixelart` or `racing` |
+| `data-tab` | `data-tab="racing"` | Tab to open first: `typing`, `flashcards`, `pixelart`, `racing` or `code` |
 | `data-tabs` | `data-tabs="pixelart,racing"` | Which tabs to show, in order |
 | `data-sound` | `data-sound="off"` | Start every game with sound off |
 | `data-base` | `data-base="https://example.com/embed/"` | Load the game scripts from your own server |
@@ -452,3 +461,14 @@ The plain, readable scripts and the tools that build them are kept in the avgoga
 <div data-spiderclimbs-breathe></div>
 <script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/breathe.js"></script>
 ```
+
+## Spider Code (spidercode.js)
+
+Coding puzzle game for ages 6 to 10. Kids tap picture blocks (arrows, 🔁 repeat, “if 💧 above / else” and a ⭐ My move function) into a program, press Play and watch the spider climb the web. 40 levels in 5 worlds: steps in order, loops, fixing buggy programs, if / else and functions. Each level gives 1 to 3 stars (reach the top, catch every fly, use the fewest blocks), and 1 star unlocks the next level. Mistakes have no penalty; after 3 tries a 💡 hint appears. Play, Step, Speed and Reset buttons, sound effects made in code with a mute button. Progress is saved in the browser (no login). Teachers: hold the title for 3 seconds to open every level. Demo: spidercode-demo.html
+
+```html
+<div data-spiderclimbs-code></div>
+<script src="https://cdn.jsdelivr.net/gh/avgogames/embedcode@main/spidercode.js" defer></script>
+```
+
+Options: `data-sound="off"` starts with sound off, `data-level="12"` opens straight into level 12 if it is unlocked, `data-fullscreen="off"` hides the full screen button. It is also the 🕷️ Spider Code tab in the games box (`data-tab="code"`).
